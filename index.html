@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tomás Loyra">
+    <title>Agenda de Turnos - Clínica Odontológica</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Clínica Odontológica</h1>
+        <p class="header__subtitle">
+            Sistema de gestión de turnos y pacientes
+        </p>
+    </header>
+
+    <main class="main">
+
+        <!-- ========================================= -->
+        <!-- FORMULARIO DE ACCESO                       -->
+        <!-- ========================================= -->
+
+        <section class="login">
+
+            <form
+                class="login__form"
+                id="loginForm">
+
+                <h2 class="login__title">
+                    Acceso al sistema
+                </h2>
+
+                <fieldset class="login__group">
+
+                    <legend class="login__legend">
+                        Usuario
+                    </legend>
+
+                    <input
+                        class="login__input"
+                        type="text"
+                        id="usuarioInput"
+                        placeholder="Nombre de usuario"
+                        required>
+
+                </fieldset>
+
+                <fieldset class="login__group">
+
+                    <legend class="login__legend">
+                        Contraseña
+                    </legend>
+
+                    <input
+                        class="login__input"
+                        type="password"
+                        id="passwordInput"
+                        placeholder="Contraseña"
+                        required>
+
+                </fieldset>
+
+                <button
+                    class="login__button"
+                    type="submit"
+                    id="accederBtn">
+
+                    Ingresar
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- FORMULARIO DE REGISTRO DE TURNOS           -->
+        <!-- ========================================= -->
+
+        <section
+            class="appointment"
+            id="appointmentPanel">
+
+            <form
+                class="appointment__form"
+                id="appointmentForm">
+
+                <h2 class="appointment__title">
+                    Registro de Turnos
+                </h2>
+
+                <!-- PACIENTE -->
+
+                <fieldset class="appointment__fieldset">
+
+                    <legend class="appointment__legend">
+                        Paciente
+                    </legend>
+
+                    <input
+                        class="appointment__input"
+                        type="text"
+                        id="patientName"
+                        placeholder="Nombre y apellido"
+                        required>
+
+                    <input
+                        class="appointment__input"
+                        type="text"
+                        id="patientDni"
+                        placeholder="DNI"
+                        required>
+
+                    <input
+                        class="appointment__input"
+                        type="text"
+                        id="appointmentNumber"
+                        placeholder="Número de turno"
+                        required>
+
+                </fieldset>
+
+                <!-- DENTISTA -->
+
+                <fieldset class="appointment__fieldset">
+
+                    <legend class="appointment__legend">
+                        Dentista
+                    </legend>
+
+                    <input
+                        class="appointment__input"
+                        type="text"
+                        id="dentistName"
+                        placeholder="Nombre y apellido"
+                        required>
+
+                    <input
+                        class="appointment__input"
+                        type="text"
+                        id="licenseNumber"
+                        placeholder="Matrícula profesional"
+                        required>
+
+                </fieldset>
+
+                <div class="appointment__actions">
+
+                    <button
+                        class="appointment__button appointment__button--primary"
+                        type="submit"
+                        id="registerAppointmentBtn">
+
+                        Registrar paciente
+
+                    </button>
+
+                    <button
+                        class="appointment__button appointment__button--secondary"
+                        type="button"
+                        id="clearFormBtn">
+
+                        Limpiar formulario
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
